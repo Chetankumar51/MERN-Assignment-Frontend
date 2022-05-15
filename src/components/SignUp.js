@@ -52,7 +52,7 @@ const SignUp = () => {
         alert("Invalid Credentials");
       }
     } catch (err) {
-      console.log(err);
+      alert('Already registered')
     }
     
   };
@@ -168,7 +168,7 @@ const SignUp = () => {
               fullWidth
               required
               name="fname"
-              value={setregData.fName}
+              value={regData.fname}
               onChange={handleChange}
             />{" "}
             {!isfnameValid ? (
@@ -185,7 +185,7 @@ const SignUp = () => {
               fullWidth
               required
               name="lname"
-              value={setregData.lName}
+              value={regData.lname}
               onChange={handleChange}
             />{" "}
             {!islnameValid ? (
@@ -202,7 +202,7 @@ const SignUp = () => {
               fullWidth
               required
               name="email"
-              value={setregData.email}
+              value={regData.email}
               onChange={handleChange}
             />{" "}
             {!isEmailValid ? (
@@ -224,7 +224,7 @@ const SignUp = () => {
               fullWidth
               required
               name="password"
-              value={setregData.password}
+              value={regData.password}
               onChange={handleChange}
             />{" "}
             {!ispasswordValid ? (
